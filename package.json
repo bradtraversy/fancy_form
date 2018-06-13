@@ -1,0 +1,14 @@
+{
+  "name": "fancy_form",
+  "version": "1.0.0",
+  "description": "Fancy Form UI with CSS transitions & progress bar",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/"
+  },
+  "author": "Brad Traversy",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
