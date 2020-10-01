@@ -1,8 +1,8 @@
-# Fancy Form
+# Fancy Form:
 
-> Form UI with progress bar. Uses HTML, CSS Transitions with Sass & JavaScript.
+> Form UI with progress bar. Uses HTML-5, CSS-3 Transitions with Sass & JavaScript.
 
-## Quick Start
+## Quick Start:
 
 ``` bash
 # Install dependencies (node-sass)
