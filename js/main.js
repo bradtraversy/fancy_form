@@ -33,9 +33,11 @@ nextBtn.addEventListener('click', validate);
 
 // Next Button Click
 prevBtn.addEventListener('click', function(){
-  position -= 1
+  if(prevBtn.classList[1] != 'fa-user'){
+      position--;
   getQuestion()
-});
+  }
+})
 
 // Input Field Enter Click
 inputField.addEventListener('keyup', e => {
