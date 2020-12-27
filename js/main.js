@@ -31,6 +31,12 @@ document.addEventListener('DOMContentLoaded', getQuestion);
 // Next Button Click
 nextBtn.addEventListener('click', validate);
 
+// Prev Button Click
+prevBtn.addEventListener('click',function(){
+    position -= 1
+    getQuestion()
+})
+
 // Input Field Enter Click
 inputField.addEventListener('keyup', e => {
   if (e.keyCode == 13) {
@@ -77,8 +83,8 @@ function hideQuestion() {
 }
 
 // Transform To Create Shake Motion
-function transform(x, y) {
-  formBox.style.transform = `translate(${x}px, ${y}px)`;
+function transform(x) {
+  formBox.style.transform = `translate(${x}px, 0px)`;
 }
 
 // Validate Field
@@ -96,7 +102,7 @@ function inputFail() {
   formBox.className = 'error';
   // Repeat Shake Motion -  Set i to number of shakes
   for (let i = 0; i < 6; i++) {
-    setTimeout(transform, shakeTime * i, ((i % 2) * 2 - 1) * 20, 0);
+    setTimeout(transform, shakeTime * i, ((i % 2) * 2 - 1) * 20);
     setTimeout(transform, shakeTime * 6, 0, 0);
     inputField.focus();
   }
